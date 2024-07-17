@@ -1,0 +1,65 @@
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+
+GET http://localhost:3000/states/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIxMjA5MjM4fQ.l4s1CIPJD1e3vJZb1hW0SHiQjLvBW9RfDSRN8tUd9Ks
+
+###
+
+GET http://localhost:3000/states/8/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIxMjA5MjM4fQ.l4s1CIPJD1e3vJZb1hW0SHiQjLvBW9RfDSRN8tUd9Ks
+
+###
+
+POST http://localhost:3000/districts/
+Content-Type: application/json
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIxMjA5MjM4fQ.l4s1CIPJD1e3vJZb1hW0SHiQjLvBW9RfDSRN8tUd9Ks
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+
+GET http://localhost:3000/districts/327/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIxMjA5MjM4fQ.l4s1CIPJD1e3vJZb1hW0SHiQjLvBW9RfDSRN8tUd9Ks
+
+###
+
+DELETE http://localhost:3000/districts/327/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIxMjA5MjM4fQ.l4s1CIPJD1e3vJZb1hW0SHiQjLvBW9RfDSRN8tUd9Ks
+
+
+###
+
+PUT http://localhost:3000/districts/350/
+Content-Type: application/json
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIxMjA5MjM4fQ.l4s1CIPJD1e3vJZb1hW0SHiQjLvBW9RfDSRN8tUd9Ks
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+
+GET http://localhost:3000/states/6/stats/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzIxMjA5MjM4fQ.l4s1CIPJD1e3vJZb1hW0SHiQjLvBW9RfDSRN8tUd9Ks
+
+###
